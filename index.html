@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-DO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav">
+            <a href="#" class="nav__logo">EXPENSE TRACKER</a>
+            <button class="btn btn-clear" id="clearbtn">Clear Data</button>
+        </nav>
+        <main class="main-content">
+            <h1 class="total-balance"><span class="balance__text">Balance :</span><span class="balance__amount">
+                    ₹0.00</span></h1>
+            <div class="balance__movements">
+                <p class="income">₹0.00 &uarr;</p>
+                <p class="expense">₹0.00 &darr;</p>
+            </div>
+            <div class="movement-box">
+                <form action="" id="form-group">
+                    <select class="form-input select" name="" id="">
+                        <option value="income" selected disabled>Select</option>
+                        <option value="income">Income</option>
+                        <option value="expense">Expense</option>
+                    </select>
+                    <input class="form-input" type="text" name="" id="discriptione" placeholder="Add Discriptione">
+                    <input class="form-input" type="number" name="" id="amount-value">
+                    <button class="btn btn-submit form-input" id="submit">Submit</button>
+                </form>
+            </div>
+            <div class="movement-table">
+                <div>
+                    <h2 class="table-heading">income</h2>
+                    <table class="table income-table ">
+                        <tr>
+                            <th>Discription</th>
+                            <th>Amount</th>
+                            <th>Delete</th>
+                        </tr>
+                        <tbody class="income-list">
+
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <h2 class="table-heading">Expense</h2>
+                    <table class="table income-table">
+                        <tr>
+                            <th>Discription</th>
+                            <th>Amount</th>
+                            <th>Delete</th>
+                        </tr>
+                        <tbody class="outcom-list">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <span class="del"></span>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
